@@ -1,8 +1,8 @@
-# Cloud Providers for Production-Scale Red Team Pipeline
+# Cloud Providers for Production-Scale AI/ML Pipelines
 
 > Last updated: 2026-03-29
 
-This document covers free and cheap cloud providers for running the CommodityRedTeam benchmark pipeline at production scale. The pipeline is **API-call-heavy** (calls external LLM APIs, does not run models locally), so GPU compute is not required.
+This document covers free and cheap cloud providers for running LLM-based pipelines at production scale. Focused on projects that are **API-call-heavy** (call external LLM APIs, don't run models locally), so GPU compute is generally not required.
 
 ---
 
@@ -12,12 +12,12 @@ This document covers free and cheap cloud providers for running the CommodityRed
 
 | Provider | Models | Rate Limit | OpenAI-Compatible | Sign Up |
 |----------|--------|------------|-------------------|---------|
-| **Groq** (current) | Llama 3.3 70B, Qwen3 32B, Llama 4 Scout | 30 RPM, 14.4k RPD | Yes | https://console.groq.com/keys |
-| **Google AI Studio** (current) | Gemini 2.0 Flash, Gemini 2.5 Flash | 2-15 RPM | Yes | https://aistudio.google.com/apikey |
+| **Groq** | Llama 3.3 70B, Qwen3 32B, Llama 4 Scout | 30 RPM, 14.4k RPD | Yes | https://console.groq.com/keys |
+| **Google AI Studio** | Gemini 2.0 Flash, Gemini 2.5 Flash | 2-15 RPM | Yes | https://aistudio.google.com/apikey |
 | **OpenRouter** | Gemini Flash, Llama 3.3 70B (free tier) | 20 RPM | Yes | https://openrouter.ai |
 | **Cohere** | Command R+, Command R7B | 20 RPM | No (own SDK) | https://dashboard.cohere.com |
 | **xAI (Grok)** | Grok-2, Grok-2 Mini, Grok-2 Vision | $25/mo free credits (renewable) | Yes | https://console.x.ai |
-| **Mistral** (current) | Mistral Large, Mistral Nemo | 1 req/sec | Yes | https://console.mistral.ai |
+| **Mistral** | Mistral Large, Mistral Nemo | 1 req/sec | Yes | https://console.mistral.ai |
 
 ### Free Credits (sign-up bonus)
 
@@ -45,16 +45,16 @@ This document covers free and cheap cloud providers for running the CommodityRed
 
 ---
 
-## Part 2: Compute Providers (to run the Python pipeline)
+## Part 2: Compute Providers (to run the pipeline)
 
 ### Free Tier
 
 | Platform | What You Get | Best For | Link |
 |----------|-------------|----------|------|
-| **GitHub Actions** | 2000 min/month (public repos) | Scheduled benchmark runs via CI/CD | https://github.com/features/actions |
+| **GitHub Actions** | 2000 min/month (public repos) | Scheduled runs via CI/CD | https://github.com/features/actions |
 | **Google Colab** | Free Jupyter notebooks + occasional GPU | Ad-hoc runs, prototyping | https://colab.research.google.com |
 | **Google Cloud Run** | 2M requests/mo, 360k vCPU-sec | Serverless API wrapper | https://cloud.google.com/run |
-| **Hugging Face Spaces** | 2 vCPU, 16GB RAM (CPU tier) | Hosting results dashboard | https://huggingface.co/spaces |
+| **Hugging Face Spaces** | 2 vCPU, 16GB RAM (CPU tier) | Hosting dashboards | https://huggingface.co/spaces |
 | **AWS Lambda** | 1M invocations/month | Event-triggered runs | https://aws.amazon.com/lambda |
 
 ### Cheapest Paid
@@ -68,7 +68,7 @@ This document covers free and cheap cloud providers for running the CommodityRed
 
 ---
 
-## Recommended Setup for This Project
+## Recommended Setups
 
 ### Option A: Zero Cost ($0/month)
 
@@ -79,7 +79,7 @@ Dashboard: Hugging Face Spaces (Streamlit)
 ```
 
 - 6+ models across 4 providers, all free
-- GitHub Actions can run the benchmark nightly via cron
+- GitHub Actions can run benchmarks nightly via cron
 - Results pushed to repo, dashboard auto-updates
 
 ### Option B: Minimal Cost ($5/month)
@@ -91,7 +91,7 @@ Dashboard: Hugging Face Spaces (free)
 ```
 
 - Always-on VPS won't die when your laptop sleeps
-- DeepSeek adds high-quality reasoning models (R1) to the benchmark
+- DeepSeek adds high-quality reasoning models (R1)
 - Cron job on the droplet runs benchmarks on schedule
 
 ### Option C: Production Scale ($20-50/month)
@@ -103,34 +103,9 @@ Dashboard: HF Spaces or Cloud Run
 Storage:   S3-compatible (Cloudflare R2 -- free 10GB)
 ```
 
-- Parallel benchmark runs across multiple models
+- Parallel runs across multiple models
 - Cloudflare R2 for persistent result storage (free 10GB)
 - Modal auto-scales to zero when idle
-
----
-
-## Integration Checklist
-
-To add a new LLM provider to the pipeline:
-
-1. Get API key from the provider
-2. Add to `.env`:
-   ```
-   DEEPSEEK_API_KEY=sk-...
-   XAI_API_KEY=xai-...
-   ```
-3. Add model entry to `config/models.yaml`:
-   ```yaml
-   deepseek-v3:
-     provider: deepseek
-     model_id: deepseek-chat
-     max_tokens: 4096
-     temperature: 0.3
-     cost_per_1k_input_tokens: 0.00014
-     cost_per_1k_output_tokens: 0.00028
-   ```
-4. Add provider client in `src/utils/llm.py` (if new provider)
-5. Run: `python scripts/run_groq_benchmark.py --models deepseek-v3`
 
 ---
 

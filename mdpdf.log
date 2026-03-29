@@ -1,0 +1,228 @@
+    INFO: 2026-03-29 20:04:42,290:               log.py:   20: Logging to /home/anrd/git/epgd/docs/mdpdf.log
+   DEBUG: 2026-03-29 20:04:42,290:               cli.py:  103: cloud_providers.md
+    INFO: 2026-03-29 20:04:42,290:         converter.py:   14: cloud_providers.md
+   DEBUG: 2026-03-29 20:04:42,294:      pdf_renderer.py:  470: printSegment: Cloud Providers for Production-Scale AI/ML Pipelines
+   DEBUG: 2026-03-29 20:04:42,296:      pdf_renderer.py:  470: printSegment: Last updated: 2026-03-29
+   DEBUG: 2026-03-29 20:04:42,300:      pdf_renderer.py:  470: printSegment: This document covers free and cheap cloud providers for running LLM-based pipelines at production scale. Focused
+   DEBUG: 2026-03-29 20:04:42,301:      pdf_renderer.py:  470: printSegment: on projects that are 
+   DEBUG: 2026-03-29 20:04:42,302:      pdf_renderer.py:  470: printSegment: API-call-heavy
+   DEBUG: 2026-03-29 20:04:42,303:      pdf_renderer.py:  470: printSegment:  (call external LLM APIs, don
+   DEBUG: 2026-03-29 20:04:42,304:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-03-29 20:04:42,305:      pdf_renderer.py:  470: printSegment: t run models locally), so GPU compute is
+   DEBUG: 2026-03-29 20:04:42,305:      pdf_renderer.py:  470: printSegment: generally not required.
+   DEBUG: 2026-03-29 20:04:42,306:      pdf_renderer.py:  470: printSegment: Part 1: LLM API Providers
+   DEBUG: 2026-03-29 20:04:42,307:      pdf_renderer.py:  470: printSegment: Completely Free (no credit card required)
+   DEBUG: 2026-03-29 20:04:42,308:      pdf_renderer.py:  470: printSegment: | Provider | Models | Rate Limit | OpenAI-Compatible | Sign Up |
+   DEBUG: 2026-03-29 20:04:42,308:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,309:      pdf_renderer.py:  470: printSegment: |----------|--------|------------|-------------------|---------|
+   DEBUG: 2026-03-29 20:04:42,309:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,310:      pdf_renderer.py:  470: printSegment: Groq
+   DEBUG: 2026-03-29 20:04:42,311:      pdf_renderer.py:  470: printSegment:  | Llama 3.3 70B, Qwen3 32B, Llama 4 Scout | 30 RPM, 14.4k RPD | Yes | https://console.groq.com/keys |
+   DEBUG: 2026-03-29 20:04:42,311:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,312:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,312:      pdf_renderer.py:  470: printSegment: Google AI Studio
+   DEBUG: 2026-03-29 20:04:42,313:      pdf_renderer.py:  470: printSegment:  | Gemini 2.0 Flash, Gemini 2.5 Flash | 2-15 RPM | Yes | https://aistudio.google.com/apikey |
+   DEBUG: 2026-03-29 20:04:42,314:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,314:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,315:      pdf_renderer.py:  470: printSegment: OpenRouter
+   DEBUG: 2026-03-29 20:04:42,316:      pdf_renderer.py:  470: printSegment:  | Gemini Flash, Llama 3.3 70B (free tier) | 20 RPM | Yes | https://openrouter.ai |
+   DEBUG: 2026-03-29 20:04:42,316:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,316:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,317:      pdf_renderer.py:  470: printSegment: Cohere
+   DEBUG: 2026-03-29 20:04:42,319:      pdf_renderer.py:  470: printSegment:  | Command
+   DEBUG: 2026-03-29 20:04:42,320:      pdf_renderer.py:  470: printSegment: R+, Command R7B | 20 RPM | No (own SDK) | https://dashboard.cohere.com |
+   DEBUG: 2026-03-29 20:04:42,320:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,321:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,321:      pdf_renderer.py:  470: printSegment: xAI (Grok)
+   DEBUG: 2026-03-29 20:04:42,324:      pdf_renderer.py:  470: printSegment:  | Grok-2, Grok-2 Mini,
+   DEBUG: 2026-03-29 20:04:42,325:      pdf_renderer.py:  470: printSegment: Grok-2 Vision | $25/mo free credits (renewable) | Yes | https://console.x.ai |
+   DEBUG: 2026-03-29 20:04:42,325:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,326:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,326:      pdf_renderer.py:  470: printSegment: Mistral
+   DEBUG: 2026-03-29 20:04:42,328:      pdf_renderer.py:  470: printSegment:  | Mistral Large, Mistral Nemo
+   DEBUG: 2026-03-29 20:04:42,329:      pdf_renderer.py:  470: printSegment: | 1 req/sec | Yes | https://console.mistral.ai |
+   DEBUG: 2026-03-29 20:04:42,329:      pdf_renderer.py:  470: printSegment: Free Credits (sign-up bonus)
+   DEBUG: 2026-03-29 20:04:42,330:      pdf_renderer.py:  470: printSegment: | Provider | Models | Free Credit | OpenAI-Compatible | Sign Up |
+   DEBUG: 2026-03-29 20:04:42,331:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,331:      pdf_renderer.py:  470: printSegment: |----------|--------|-------------|-------------------|---------|
+   DEBUG: 2026-03-29 20:04:42,332:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,332:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,333:      pdf_renderer.py:  470: printSegment: DeepSeek
+   DEBUG: 2026-03-29 20:04:42,334:      pdf_renderer.py:  470: printSegment:  | DeepSeek-V3.2, DeepSeek-R1 | 10M free tokens |
+   DEBUG: 2026-03-29 20:04:42,335:      pdf_renderer.py:  470: printSegment: Yes | https://platform.deepseek.com |
+   DEBUG: 2026-03-29 20:04:42,336:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,336:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,337:      pdf_renderer.py:  470: printSegment: DeepInfra
+   DEBUG: 2026-03-29 20:04:42,338:      pdf_renderer.py:  470: printSegment:  | Llama 3.1 405B, Qwen 2.5 72B | $5 signup bonus | Yes |
+   DEBUG: 2026-03-29 20:04:42,338:      pdf_renderer.py:  470: printSegment: https://deepinfra.com |
+   DEBUG: 2026-03-29 20:04:42,339:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,339:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,340:      pdf_renderer.py:  470: printSegment: SambaNova
+   DEBUG: 2026-03-29 20:04:42,341:      pdf_renderer.py:  470: printSegment:  | Llama 3.1 405B/70B | Generous free credits | Yes |
+   DEBUG: 2026-03-29 20:04:42,342:      pdf_renderer.py:  470: printSegment: https://cloud.sambanova.ai |
+   DEBUG: 2026-03-29 20:04:42,343:      pdf_renderer.py:  470: printSegment: Cheapest Paid (when free tiers run out)
+   DEBUG: 2026-03-29 20:04:42,344:      pdf_renderer.py:  470: printSegment: | Provider | Price per 1M tokens (input/output) | Notes |
+   DEBUG: 2026-03-29 20:04:42,344:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,345:      pdf_renderer.py:  470: printSegment: |----------|-------------------------------------|-------|
+   DEBUG: 2026-03-29 20:04:42,345:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,346:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,347:      pdf_renderer.py:  470: printSegment: DeepSeek
+   DEBUG: 2026-03-29 20:04:42,347:      pdf_renderer.py:  470: printSegment: V3.2
+   DEBUG: 2026-03-29 20:04:42,348:      pdf_renderer.py:  470: printSegment:  | $0.14 / $0.28 | 100x cheaper than GPT-5 |
+   DEBUG: 2026-03-29 20:04:42,348:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,349:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,349:      pdf_renderer.py:  470: printSegment: SiliconFlow
+   DEBUG: 2026-03-29 20:04:42,351:      pdf_renderer.py:  470: printSegment:  | Competitive | 2.3x faster inference than competitors
+   DEBUG: 2026-03-29 20:04:42,351:      pdf_renderer.py:  470: printSegment: |
+   DEBUG: 2026-03-29 20:04:42,352:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,353:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,353:      pdf_renderer.py:  470: printSegment: Fireworks AI
+   DEBUG: 2026-03-29 20:04:42,354:      pdf_renderer.py:  470: printSegment:  | ~$0.20 / $0.80 | Good for open-source models at scale |
+   DEBUG: 2026-03-29 20:04:42,355:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,355:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,356:      pdf_renderer.py:  470: printSegment: Google Gemini 2.5 Flash
+   DEBUG: 2026-03-29 20:04:42,357:      pdf_renderer.py:  470: printSegment:  | ~$0.02 /
+   DEBUG: 2026-03-29 20:04:42,358:      pdf_renderer.py:  470: printSegment: $0.10 | Cheapest high-quality option |
+   DEBUG: 2026-03-29 20:04:42,358:      pdf_renderer.py:  470: printSegment: Provider Comparison Notes
+   DEBUG: 2026-03-29 20:04:42,359:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,360:      pdf_renderer.py:  470: printSegment: Groq
+   DEBUG: 2026-03-29 20:04:42,370:      pdf_renderer.py:  470: printSegment:  uses custom LPU hardware for fastest inference (~280-1000 T/sec), but has strict daily token
+   DEBUG: 2026-03-29 20:04:42,372:      pdf_renderer.py:  470: printSegment: limits per model on the free tier. Each model has an independent quota -- if one is rate-limited,
+   DEBUG: 2026-03-29 20:04:42,373:      pdf_renderer.py:  470: printSegment: switch to another.
+   DEBUG: 2026-03-29 20:04:42,374:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,374:      pdf_renderer.py:  470: printSegment: DeepSeek
+   DEBUG: 2026-03-29 20:04:42,376:      pdf_renderer.py:  470: printSegment:  offers the best cost/quality ratio for paid usage. Their R1 model ($6M training cost vs
+   DEBUG: 2026-03-29 20:04:42,376:      pdf_renderer.py:  470: printSegment: GPT-4
+   DEBUG: 2026-03-29 20:04:42,377:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-03-29 20:04:42,378:      pdf_renderer.py:  470: printSegment: s $100M) passes savings to API pricing.
+   DEBUG: 2026-03-29 20:04:42,378:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,379:      pdf_renderer.py:  470: printSegment: xAI Grok
+   DEBUG: 2026-03-29 20:04:42,380:      pdf_renderer.py:  470: printSegment:  is the hidden gem -- $25/month in free credits renews, and the API is
+   DEBUG: 2026-03-29 20:04:42,381:      pdf_renderer.py:  470: printSegment: OpenAI-compatible.
+   DEBUG: 2026-03-29 20:04:42,382:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,382:      pdf_renderer.py:  470: printSegment: OpenRouter
+   DEBUG: 2026-03-29 20:04:42,384:      pdf_renderer.py:  470: printSegment:  aggregates multiple providers and routes to the cheapest available endpoint. Good
+   DEBUG: 2026-03-29 20:04:42,385:      pdf_renderer.py:  470: printSegment: fallback strategy.
+   DEBUG: 2026-03-29 20:04:42,386:      pdf_renderer.py:  470: printSegment: Part 2: Compute Providers (to run the pipeline)
+   DEBUG: 2026-03-29 20:04:42,387:      pdf_renderer.py:  470: printSegment: Free Tier
+   DEBUG: 2026-03-29 20:04:42,388:      pdf_renderer.py:  470: printSegment: | Platform | What You Get | Best For | Link |
+   DEBUG: 2026-03-29 20:04:42,389:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,389:      pdf_renderer.py:  470: printSegment: |----------|-------------|----------|------|
+   DEBUG: 2026-03-29 20:04:42,390:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,390:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,391:      pdf_renderer.py:  470: printSegment: GitHub Actions
+   DEBUG: 2026-03-29 20:04:42,393:      pdf_renderer.py:  470: printSegment:  | 2000 min/month
+   DEBUG: 2026-03-29 20:04:42,394:      pdf_renderer.py:  470: printSegment: (public repos) | Scheduled runs via CI/CD | https://github.com/features/actions |
+   DEBUG: 2026-03-29 20:04:42,394:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,394:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,395:      pdf_renderer.py:  470: printSegment: Google Colab
+   DEBUG: 2026-03-29 20:04:42,397:      pdf_renderer.py:  470: printSegment:  | Free Jupyter
+   DEBUG: 2026-03-29 20:04:42,398:      pdf_renderer.py:  470: printSegment: notebooks + occasional GPU | Ad-hoc runs, prototyping | https://colab.research.google.com |
+   DEBUG: 2026-03-29 20:04:42,398:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,399:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,399:      pdf_renderer.py:  470: printSegment: Google Cloud Run
+   DEBUG: 2026-03-29 20:04:42,401:      pdf_renderer.py:  470: printSegment:  |
+   DEBUG: 2026-03-29 20:04:42,402:      pdf_renderer.py:  470: printSegment: 2M requests/mo, 360k vCPU-sec | Serverless API wrapper | https://cloud.google.com/run |
+   DEBUG: 2026-03-29 20:04:42,402:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,403:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,403:      pdf_renderer.py:  470: printSegment: Hugging Face Spaces
+   DEBUG: 2026-03-29 20:04:42,405:      pdf_renderer.py:  470: printSegment:  |
+   DEBUG: 2026-03-29 20:04:42,406:      pdf_renderer.py:  470: printSegment: 2 vCPU, 16GB RAM (CPU tier) | Hosting dashboards | https://huggingface.co/spaces |
+   DEBUG: 2026-03-29 20:04:42,406:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,407:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,407:      pdf_renderer.py:  470: printSegment: AWS Lambda
+   DEBUG: 2026-03-29 20:04:42,409:      pdf_renderer.py:  470: printSegment:  | 1M
+   DEBUG: 2026-03-29 20:04:42,409:      pdf_renderer.py:  470: printSegment: invocations/month | Event-triggered runs | https://aws.amazon.com/lambda |
+   DEBUG: 2026-03-29 20:04:42,410:      pdf_renderer.py:  470: printSegment: Cheapest Paid
+   DEBUG: 2026-03-29 20:04:42,411:      pdf_renderer.py:  470: printSegment: | Platform | Price | Best For | Link |
+   DEBUG: 2026-03-29 20:04:42,411:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,412:      pdf_renderer.py:  470: printSegment: |----------|-------|----------|------|
+   DEBUG: 2026-03-29 20:04:42,412:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,413:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,413:      pdf_renderer.py:  470: printSegment: Modal
+   DEBUG: 2026-03-29 20:04:42,415:      pdf_renderer.py:  470: printSegment:  | Free monthly credits, then
+   DEBUG: 2026-03-29 20:04:42,416:      pdf_renderer.py:  470: printSegment: pay-per-second | Python-native autoscaling | https://modal.com |
+   DEBUG: 2026-03-29 20:04:42,416:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,417:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,418:      pdf_renderer.py:  470: printSegment: DigitalOcean Droplet
+   DEBUG: 2026-03-29 20:04:42,419:      pdf_renderer.py:  470: printSegment:  | $4-6/month | Always-on
+   DEBUG: 2026-03-29 20:04:42,420:      pdf_renderer.py:  470: printSegment: VPS for scheduled runs | https://www.digitalocean.com |
+   DEBUG: 2026-03-29 20:04:42,420:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,421:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,421:      pdf_renderer.py:  470: printSegment: Vast.ai
+   DEBUG: 2026-03-29 20:04:42,423:      pdf_renderer.py:  470: printSegment:  | ~$0.15-0.50/hr GPU | Cheapest GPU (if needed
+   DEBUG: 2026-03-29 20:04:42,424:      pdf_renderer.py:  470: printSegment: for local inference) | https://vast.ai |
+   DEBUG: 2026-03-29 20:04:42,425:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-03-29 20:04:42,425:      pdf_renderer.py:  470: printSegment: | 
+   DEBUG: 2026-03-29 20:04:42,426:      pdf_renderer.py:  470: printSegment: RunPod
+   DEBUG: 2026-03-29 20:04:42,427:      pdf_renderer.py:  470: printSegment:  | Pay-per-second, spot instances 70% off | Burst GPU workloads |
+   DEBUG: 2026-03-29 20:04:42,428:      pdf_renderer.py:  470: printSegment: https://www.runpod.io |
+   DEBUG: 2026-03-29 20:04:42,429:      pdf_renderer.py:  470: printSegment: Recommended Setups
+   DEBUG: 2026-03-29 20:04:42,430:      pdf_renderer.py:  470: printSegment: Option A: Zero Cost ($0/month)
+   DEBUG: 2026-03-29 20:04:42,431:      pdf_renderer.py:  470: printSegment: LLM APIs:  Groq (3 models) + Google AI Studio (Gemini) + xAI Grok
+   DEBUG: 2026-03-29 20:04:42,433:      pdf_renderer.py:  470: printSegment: ($25 free credits)
+   DEBUG: 2026-03-29 20:04:42,434:      pdf_renderer.py:  470: printSegment: Compute:   GitHub Actions (scheduled cron) or Google Colab (manual)
+   DEBUG: 2026-03-29 20:04:42,435:      pdf_renderer.py:  470: printSegment: Dashboard: Hugging Face Spaces (Streamlit)
+   DEBUG: 2026-03-29 20:04:42,435:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,436:      pdf_renderer.py:  470: printSegment: 6+ models across 4 providers, all free
+   DEBUG: 2026-03-29 20:04:42,437:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,438:      pdf_renderer.py:  470: printSegment: GitHub Actions can run benchmarks nightly via cron
+   DEBUG: 2026-03-29 20:04:42,438:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,439:      pdf_renderer.py:  470: printSegment: Results pushed to repo, dashboard auto-updates
+   DEBUG: 2026-03-29 20:04:42,440:      pdf_renderer.py:  470: printSegment: Option B: Minimal Cost ($5/month)
+   DEBUG: 2026-03-29 20:04:42,442:      pdf_renderer.py:  470: printSegment: LLM APIs:  All free providers above + DeepSeek (10M tokens free,
+   DEBUG: 2026-03-29 20:04:42,443:      pdf_renderer.py:  470: printSegment: then $0.14/1M)
+   DEBUG: 2026-03-29 20:04:42,445:      pdf_renderer.py:  470: printSegment: Compute:   DigitalOcean Droplet ($5/mo) -- always-on, no sleep
+   DEBUG: 2026-03-29 20:04:42,446:      pdf_renderer.py:  470: printSegment: interruptions
+   DEBUG: 2026-03-29 20:04:42,448:      pdf_renderer.py:  470: printSegment: Dashboard: Hugging Face Spaces (free)
+   DEBUG: 2026-03-29 20:04:42,448:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,449:      pdf_renderer.py:  470: printSegment: Always-on VPS won
+   DEBUG: 2026-03-29 20:04:42,450:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-03-29 20:04:42,451:      pdf_renderer.py:  470: printSegment: t die when your laptop sleeps
+   DEBUG: 2026-03-29 20:04:42,451:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,452:      pdf_renderer.py:  470: printSegment: DeepSeek adds high-quality reasoning models (R1)
+   DEBUG: 2026-03-29 20:04:42,453:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,454:      pdf_renderer.py:  470: printSegment: Cron job on the droplet runs benchmarks on schedule
+   DEBUG: 2026-03-29 20:04:42,455:      pdf_renderer.py:  470: printSegment: Option C: Production Scale ($20-50/month)
+   DEBUG: 2026-03-29 20:04:42,456:      pdf_renderer.py:  470: printSegment: LLM APIs:  All free providers + DeepSeek paid + Fireworks AI
+   DEBUG: 2026-03-29 20:04:42,459:      pdf_renderer.py:  470: printSegment: Compute:   Modal (autoscaling, parallel runs) or DigitalOcean
+   DEBUG: 2026-03-29 20:04:42,460:      pdf_renderer.py:  470: printSegment: ($12/mo 2GB)
+   DEBUG: 2026-03-29 20:04:42,461:      pdf_renderer.py:  470: printSegment: Dashboard: HF Spaces or Cloud Run
+   DEBUG: 2026-03-29 20:04:42,462:      pdf_renderer.py:  470: printSegment: Storage:   S3-compatible (Cloudflare R2 -- free 10GB)
+   DEBUG: 2026-03-29 20:04:42,463:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,464:      pdf_renderer.py:  470: printSegment: Parallel runs across multiple models
+   DEBUG: 2026-03-29 20:04:42,464:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,465:      pdf_renderer.py:  470: printSegment: Cloudflare R2 for persistent result storage (free 10GB)
+   DEBUG: 2026-03-29 20:04:42,466:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,467:      pdf_renderer.py:  470: printSegment: Modal auto-scales to zero when idle
+   DEBUG: 2026-03-29 20:04:42,468:      pdf_renderer.py:  470: printSegment: Sources
+   DEBUG: 2026-03-29 20:04:42,469:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,469:      pdf_renderer.py:  470: printSegment: Free LLM API Directory (45+ providers)
+   DEBUG: 2026-03-29 20:04:42,470:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,471:      pdf_renderer.py:  470: printSegment: LLM API Pricing Comparison (Mar 2026)
+   DEBUG: 2026-03-29 20:04:42,472:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,473:      pdf_renderer.py:  470: printSegment: Top 15 Cloud Platforms for AI/ML in 2026
+   DEBUG: 2026-03-29 20:04:42,474:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,475:      pdf_renderer.py:  470: printSegment: Cheapest AI Inference Services 2026
+   DEBUG: 2026-03-29 20:04:42,476:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,476:      pdf_renderer.py:  470: printSegment: Top Cloud GPU Providers 2026
+   DEBUG: 2026-03-29 20:04:42,477:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,477:      pdf_renderer.py:  470: printSegment: Free LLM API Resources (GitHub)
+   DEBUG: 2026-03-29 20:04:42,478:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,479:      pdf_renderer.py:  470: printSegment: Groq Supported Models
+   DEBUG: 2026-03-29 20:04:42,479:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:  470: printSegment: Groq Model Deprecations
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 0, [1, 'Cloud Providers for Production-Scale AI/ML Pipelines', 1, 68.0]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 1, [2, 'Part 1: LLM API Providers', 1, 184.0]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 2, [3, 'Completely Free (no credit card required)', 1, 217.20000000000002]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 3, [3, 'Free Credits (sign-up bonus)', 1, 336.0]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 4, [3, 'Cheapest Paid (when free tiers run out)', 1, 430.79999999999995]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 5, [3, 'Provider Comparison Notes', 1, 513.5999999999999]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 6, [2, 'Part 2: Compute Providers (to run the pipeline)', 1, 674.7999999999998]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 7, [3, 'Free Tier', 1, 707.9999999999998]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 8, [3, 'Cheapest Paid', 2, 164.4]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 9, [2, 'Recommended Setups', 2, 271.6]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 10, [3, 'Option A: Zero Cost ($0/month)', 2, 304.8]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 11, [3, 'Option B: Minimal Cost ($5/month)', 2, 441.59999999999997]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 12, [3, 'Option C: Production Scale ($20-50/month)', 2, 590.4]
+   DEBUG: 2026-03-29 20:04:42,480:      pdf_renderer.py:   53: 13, [2, 'Sources', 3, 104.8]
